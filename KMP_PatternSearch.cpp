@@ -1,9 +1,9 @@
 /* In this algorithm our aim is to find a pattern in the given string, but in an efficient way, normally we can take a sliding window and start comparing which would
-take O(mn), but using KMP we can do the pattern matching in O(m+n), because instead of backtracking in the main string we can know the positon in the pattern from
-which we need compare again, we make and *lps* array which stores this information. 
+take O(mn), but using KMP we can do the pattern matching in O(m+n) because instead of backtracking in the main string we can know the position in the pattern from
+which we need to compare again, we make an *lps* array that stores this information. 
 
-Lps(longest prefix suffix): we pass the pattern string here and get the longest prefix which is also suffix, it is actually a preprocessing step that act as an map
-which states at which position should we go if characters missmatch happens */
+Lps(longest prefix suffix): we pass the pattern string here and get the longest prefix which is also a suffix, it is actually a preprocessing step that act as a map
+which states at which position should we go if character mismatch happens */
 
 //code for finding lps, of string pat;
 void lpsa(string pat,int m,int *lps)
